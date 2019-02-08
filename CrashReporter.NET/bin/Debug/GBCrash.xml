@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GBCrash</name>
+    </assembly>
+    <members>
+        <member name="F:GBCrash.CrashReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:GBCrash.CrashReport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:GBCrash.CrashReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ProgressDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:GBCrash.ProgressDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:GBCrash.ProgressDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:GBCrash.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.ajax_loader">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.email_go">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.save_as">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.stop">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:GBCrash.Properties.Resources.warning_64">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:GBCrash.ReportCrash">
+            <summary>
+            Set SMTP server details and receiver email fields of this class instance to send crash reports directly in your inbox.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.SmtpHost">
+            <summary>
+            Gets or Sets name or IP address of the Host used for SMTP transactions.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.EnableSSL">
+            <summary>
+            Specify whether the SMTP client uses the Secure Socket Layer (SSL) to encrypt the connection.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.Port">
+            <summary>
+            Gets or Sets the port used for SMTP transactions.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.UserName">
+            <summary>
+            Gets or Sets the username used for SMTP transactions.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.Password">
+            <summary>
+            Gets or Sets the password used for SMTP transactions. 
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.ToEmail">
+            <summary>
+            Gets or Sets email address where you want to receive crash reports.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.FromEmail">
+            <summary>
+            Gets or Sets email address used by crash reporter if user don't provide her email address.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.Exception">
+            <summary>
+            Gets or Sets exception that occur during application execution.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.CaptureScreen">
+            <summary>
+            Specify whether CrashReporter.NET should take screen shot of whole screen or not.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.DeveloperMessage">
+            <summary>
+            Gets or Sets custom message developer wants to send. It can be something like value of variables or other details you want to send.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.EmailRequired">
+            <summary>
+             Gets or Sets if email is required to send the crash report.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.IncludeScreenshot">
+            <summary>
+            Gets or Sets "Include screenshot" start value.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.CurrentCulture">
+            <summary>
+            Gets or Sets the current culture to use by the library.
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.AnalyzeWithDoctorDump">
+            <summary>
+            Specify whether CrashReporter.NET should send crash reports only for new problems (duplicates detected by Doctor Dump free cloud service).
+            </summary>
+        </member>
+        <member name="F:GBCrash.ReportCrash.DoctorDumpSettings">
+            <summary>
+            Specify Doctor Dump processing settings. Used only when AnalyzeWithDoctorDump is true.
+            </summary>
+        </member>
+        <member name="M:GBCrash.ReportCrash.Send">
+            <summary>
+            Sends exception report directly to receiver email address provided in ToEmail.
+            </summary>
+        </member>
+        <member name="M:GBCrash.ReportCrash.Send(System.Exception)">
+            <summary>
+            Sends exception report directly to receiver email address provided in ToEmail.
+            </summary>
+            <param name="exception">Exception object that contains details of the exception.</param>
+        </member>
+        <member name="T:GBCrash.DoctorDumpSettings">
+            <summary>
+            Set Doctor Dump processing settings.
+            </summary>
+        </member>
+        <member name="F:GBCrash.DoctorDumpSettings.ApplicationID">
+            <summary>
+            Gets or Sets application ID.
+            </summary>
+        </member>
+        <member name="F:GBCrash.DoctorDumpSettings.SendAnonymousReportSilently">
+            <summary>
+            Specify whether CrashReporter.NET should send anonymous crash report to Doctor Dump that doesn't contain private information.
+            Only about 1/10 of users press "Send" button on crash reporting dialogs. And even less if there are required fields to fill.
+            Without sending anonymous reports most of the problems are hidden from the developer.
+            </summary>
+        </member>
+        <member name="F:GBCrash.DoctorDumpSettings.OpenReportInBrowser">
+            <summary>
+            Specify whether CrashReporter.NET should open the web page in browser about crash report that contains report ID and may contain steps to fix the problem.
+            </summary>
+        </member>
+        <member name="T:GBCrash.com.drdump.HttpCrashReporterReportUploader">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAnonymousReport(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAnonymousReportAsync(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAnonymousReportAsync(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAdditionalData(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAdditionalDataAsync(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAdditionalDataAsync(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpCrashReporterReportUploader.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAnonymousReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GBCrash.com.drdump.HttpCrashReporterReportUploader.SendAdditionalDataCompleted">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.HttpsCrashReporterReportUploader">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAnonymousReport(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAnonymousReportAsync(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAnonymousReportAsync(GBCrash.com.drdump.ClientLib,GBCrash.com.drdump.Application,GBCrash.com.drdump.ExceptionDescription,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAdditionalData(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAdditionalDataAsync(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAdditionalDataAsync(System.Byte[],GBCrash.com.drdump.DetailedExceptionDescription,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GBCrash.com.drdump.HttpsCrashReporterReportUploader.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAnonymousReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GBCrash.com.drdump.HttpsCrashReporterReportUploader.SendAdditionalDataCompleted">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.ClientLib">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ClientLib.V1">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ClientLib.V2">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ClientLib.V3">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ClientLib.V4">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.DetailedExceptionDescription">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.DetailedExceptionDescription.DeveloperMessage">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.DetailedExceptionDescription.Exception">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.DetailedExceptionDescription.PngScreenShot">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.DetailedExceptionDescription.UserDescription">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.DetailedExceptionDescription.UserEmail">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.ExceptionDescription">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.ClrVersion">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.CrashDate">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.Exception">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.ExceptionString">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.OS">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionDescription.PCID">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.ExceptionInfo">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.HResult">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.InnerException">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.Message">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.Source">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.StackTrace">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ExceptionInfo.Type">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.Response">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.ClientID">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.Context">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.DumpGroupID">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.DumpGroupIDSpecified">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.DumpID">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.DumpIDSpecified">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.Garbage">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.ProblemID">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.ProblemIDSpecified">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Response.UrlToProblem">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.StopResponse">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.NeedReportResponse">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.ErrorResponse">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.ErrorResponse.Error">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.Application">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.AppName">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.ApplicationGUID">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.CompanyName">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.Email">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.MainModule">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.V1">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.V2">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.V3">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.Application.V4">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.SendAnonymousReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.SendAnonymousReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.SendAnonymousReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.SendAdditionalDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GBCrash.com.drdump.SendAdditionalDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GBCrash.com.drdump.SendAdditionalDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,29 @@
+﻿Build started 04/10/2015 16:22:55.
+     1>Project "E:\Research\LOLUTIL\OVL\Win32Project1\Win32Project1.vcxproj" on node 2 (Build target(s)).
+       Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WIN32 /D WIN32 /D DETOURS_32BIT /D _DEBUG /D _WINDOWS /D _USRDLL /D DETOURS_X86 /D WIN32PROJECT1_EXPORTS /D _CRT_SECURE_NO_DEPRECATE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+     1>e:\research\lolutil\ovl\win32project1\dllmain.cpp(112): warning C4101: 'i' : unreferenced local variable
+     1>e:\research\lolutil\ovl\win32project1\dllmain.cpp(169): warning C4101: 'threadId' : unreferenced local variable
+     1>e:\research\lolutil\ovl\win32project1\dllmain.cpp(165): warning C4101: 'cbWritten' : unreferenced local variable
+     1>e:\research\lolutil\ovl\win32project1\dllmain.cpp(465): warning C4101: 'buffer' : unreferenced local variable
+     1>e:\research\lolutil\ovl\win32project1\dllmain.cpp(208): warning C4715: 'StartPipe' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\..\Projects\Ghostblade\Release\GhostOverlay.dll" /INCREMENTAL /NOLOGO d3dx9.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\..\..\Projects\Ghostblade\Release\GhostOverlay.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\..\Projects\Ghostblade\Release\GhostOverlay.lib" /MACHINE:X86 /DLL Debug\GhostOverlay3.res
+         Debug\creatwth.obj
+         Debug\detours.obj
+         Debug\detours.obj
+         Debug\disasm.obj
+         Debug\dllmain.obj
+         Debug\image.obj
+         Debug\modules.obj
+         Debug\stdafx.obj
+         Debug\Win32Project1.obj
+         Win32Project1.vcxproj -> E:\Research\LOLUTIL\OVL\Win32Project1\..\..\..\..\Projects\Ghostblade\Release\GhostOverlay.dll
+     1>Done Building Project "E:\Research\LOLUTIL\OVL\Win32Project1\Win32Project1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.99

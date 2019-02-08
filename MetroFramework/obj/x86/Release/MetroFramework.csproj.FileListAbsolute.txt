@@ -1,0 +1,13 @@
+D:\LOLUTIL\Ghostblade\MetroFramework\bin\x86\Release\MetroFramework.dll
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.Controls.MetroGrid.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.MetroMessageBoxControl.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.Properties.Resources.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.csproj.GenerateResource.Cache
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.dll
+E:\Projects\Ghostblade\MetroFramework\bin\x86\Release\MetroFramework.dll
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.csprojResolveAssemblyReference.cache
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.Controls.MetroGrid.resources
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.MetroMessageBoxControl.resources
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.Properties.Resources.resources
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.csproj.GenerateResource.Cache
+E:\Projects\Ghostblade\MetroFramework\obj\x86\Release\MetroFramework.dll

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88D9B02A-803E-41FE-B46C-22A6B5E87453}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ghostblade</RootNamespace>
+    <AssemblyName>Ghostblade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ghost.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ghostblade OLD\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedUPnP, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\ManagedUPnP.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\Ghostblade OLD\Release\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ghostblade OLD\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.94.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GhostbladeOLD\Release\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutControl.designer.cs">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedGameInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdvancedGameInfoControl.Designer.cs">
+      <DependentUpon>AdvancedGameInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChampionCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChampionCtrl.designer.cs">
+      <DependentUpon>ChampionCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurrentGame.designer.cs">
+      <DependentUpon>CurrentGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Featured Games\FeaturedGameControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Featured Games\FeaturedGameControl.Designer.cs">
+      <DependentUpon>FeaturedGameControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Featured Games\FeaturedPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Featured Games\FeaturedPlayer.designer.cs">
+      <DependentUpon>FeaturedPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Featured Games\EsportsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Featured Games\EsportsControl.Designer.cs">
+      <DependentUpon>EsportsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameInfoControl.designer.cs">
+      <DependentUpon>GameInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NSTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player.designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player2Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player2Ctrl.designer.cs">
+      <DependentUpon>Player2Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Featured Games\ShardInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Featured Games\ShardInfoControl.Designer.cs">
+      <DependentUpon>ShardInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThemeBase154.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TopBanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TopBanner.Designer.cs">
+      <DependentUpon>TopBanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecordingPanel.Designer.cs">
+      <DependentUpon>RecordingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReplayPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReplayPanel.Designer.cs">
+      <DependentUpon>ReplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReplayTask.cs" />
+    <Compile Include="RiotLib.cs" />
+    <Compile Include="ScheduleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleControl.Designer.cs">
+      <DependentUpon>ScheduleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsControl.designer.cs">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StreamControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StreamControl.Designer.cs">
+      <DependentUpon>StreamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stream\GhostReplayServer.cs" />
+    <Compile Include="Stream\HTTPServer.cs" />
+    <Compile Include="Stream\HttpServerManager.cs" />
+    <EmbeddedResource Include="AboutControl.resx">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancedGameInfoControl.resx">
+      <DependentUpon>AdvancedGameInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChampionCtrl.resx">
+      <DependentUpon>ChampionCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentGame.resx">
+      <DependentUpon>CurrentGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Featured Games\EsportsControl.resx">
+      <DependentUpon>EsportsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Featured Games\FeaturedGameControl.resx">
+      <DependentUpon>FeaturedGameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Featured Games\FeaturedPlayer.resx">
+      <DependentUpon>FeaturedPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameInfoControl.resx">
+      <DependentUpon>GameInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player2Ctrl.resx">
+      <DependentUpon>Player2Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Featured Games\ShardInfoControl.resx">
+      <DependentUpon>ShardInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TopBanner.resx">
+      <DependentUpon>TopBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordingPanel.resx">
+      <DependentUpon>RecordingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplayPanel.resx">
+      <DependentUpon>ReplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleControl.resx">
+      <DependentUpon>ScheduleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsControl.resx">
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StreamControl.resx">
+      <DependentUpon>StreamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animator\Animator.csproj">
+      <Project>{97fe1093-38d3-4eec-a602-340f792c9d25}</Project>
+      <Name>Animator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrashReporter.NET\GBCrash.csproj">
+      <Project>{67912bda-1572-46b0-8623-5872d9dadbc8}</Project>
+      <Name>GBCrash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GBReplay\GBReplay.csproj">
+      <Project>{00980cc5-2b5e-4278-9748-3e1c752033c7}</Project>
+      <Name>GBReplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GhostLib\GhostLib.csproj">
+      <Project>{1a6e883b-981d-44ce-9161-01470599b30c}</Project>
+      <Name>GhostLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GhostPatcher\GhostBase.csproj">
+      <Project>{3252c427-0dc1-47d6-97ce-2df58dc40300}</Project>
+      <Name>GhostBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetroFramework\MetroFramework.csproj">
+      <Project>{bb41ac8b-cbed-4387-a7e0-4567edb3f57f}</Project>
+      <Name>MetroFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RiotSharp\RiotSharp.csproj">
+      <Project>{3815e113-140c-4ee7-b0b9-7797c9352311}</Project>
+      <Name>RiotSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\challenger-profile-banner-trim-1064x169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aatrox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_play_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\champion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_inv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platinum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default_Profile_Banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ghost.ico" />
+    <None Include="Resources\Unknown.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)signtool.exe sign /t http://timestamp.verisign.com/scripts/timstamp.dll /f "E:\ARCHIVE\Arsslensoft\CA\ASCA-GAMING.pfx" "$(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+D:\LOLUTIL\Ghostblade\MetroFramework\bin\x86\Debug\MetroFramework.dll
+D:\LOLUTIL\Ghostblade\MetroFramework\bin\x86\Debug\MetroFramework.pdb
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.Controls.MetroGrid.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.MetroMessageBoxControl.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.Properties.Resources.resources
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.csproj.GenerateResource.Cache
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.dll
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.pdb
+D:\LOLUTIL\Ghostblade\MetroFramework\obj\x86\Debug\MetroFramework.csprojResolveAssemblyReference.cache

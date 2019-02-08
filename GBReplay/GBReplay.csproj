@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00980CC5-2B5E-4278-9748-3E1C752033C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GBReplay</RootNamespace>
+    <AssemblyName>GBReplay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Al.Security">
+      <HintPath>..\..\..\..\Ghostblade\Release\Al.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Ghostblade\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameData.cs" />
+    <Compile Include="Game\Data.cs" />
+    <Compile Include="GhostReplay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReplayReader.cs" />
+    <Compile Include="ReplaySignature.cs" />
+    <Compile Include="ReplayStructs.cs" />
+    <Compile Include="ReplayWriter.cs" />
+    <Compile Include="Riot\EndOfGameStats.cs" />
+    <Compile Include="Riot\PlayerParticipantStatsSummary.cs" />
+    <Compile Include="Riot\RawStatDTO.cs" />
+    <Compile Include="Riot\TeamId.cs" />
+    <Compile Include="Riot\TeamInfo.cs" />
+    <Compile Include="RTMP\Complete\ExceptionalEventArgs.cs" />
+    <Compile Include="RTMP\Complete\IO\StreamHelper.cs" />
+    <Compile Include="RTMP\Complete\IO\Zlib\Adler32.cs" />
+    <Compile Include="RTMP\Complete\IO\Zlib\ZlibStream.cs" />
+    <Compile Include="RTMP\Complete\MethodFactory.cs" />
+    <Compile Include="RTMP\Complete\Threading\TaskCallbackManager.cs" />
+    <Compile Include="RTMP\IO\AMF0\Amf0TypeMarkers.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0ArrayWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0AsObjectWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0BooleanWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0CharWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0DateTimeWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0EnumWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0GuidWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0NumberWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0ObjectWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0StringWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0XDocumentWriter.cs" />
+    <Compile Include="RTMP\IO\AMF0\AMFWriters\Amf0XElementWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\Amf3TypeMarkers.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3ArrayWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3AsObjectWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3BooleanWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3ByteArrayWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3CharWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3DateTimeWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3DoubleWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3EnumWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3GuidWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3IntWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3NativeByteArrayWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3ObjectWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3StringWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3VectorWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3XDocumentWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\AMFWriters\Amf3XElementWriter.cs" />
+    <Compile Include="RTMP\IO\AMF3\ArrayCollection.cs" />
+    <Compile Include="RTMP\IO\AMF3\ByteArray.cs" />
+    <Compile Include="RTMP\IO\AMF3\DataInput.cs" />
+    <Compile Include="RTMP\IO\AMF3\DataOutput.cs" />
+    <Compile Include="RTMP\IO\AMF3\IDataInput.cs" />
+    <Compile Include="RTMP\IO\AMF3\IDataOutput.cs" />
+    <Compile Include="RTMP\IO\AMF3\IExternalizable.cs" />
+    <Compile Include="RTMP\IO\AMF3\ObjectProxy.cs" />
+    <Compile Include="RTMP\IO\AmfReader.cs" />
+    <Compile Include="RTMP\IO\AmfWriter.cs" />
+    <Compile Include="RTMP\IO\AsObject.cs" />
+    <Compile Include="RTMP\IO\ClassDescription.cs" />
+    <Compile Include="RTMP\IO\DeserializationStrategy.cs" />
+    <Compile Include="RTMP\IO\FallbackStrategy.cs" />
+    <Compile Include="RTMP\IO\IAmfItemWriter.cs" />
+    <Compile Include="RTMP\IO\IObjectWrapper.cs" />
+    <Compile Include="RTMP\IO\MiniTypeConverter.cs" />
+    <Compile Include="RTMP\IO\ObjectEncoding.cs" />
+    <Compile Include="RTMP\IO\ObjectWrapperFactory.cs" />
+    <Compile Include="RTMP\IO\ObjectWrappers\AsObjectWrapper.cs" />
+    <Compile Include="RTMP\IO\ObjectWrappers\BasicObjectWrapper.cs" />
+    <Compile Include="RTMP\IO\ObjectWrappers\ExceptionWrapper.cs" />
+    <Compile Include="RTMP\IO\ObjectWrappers\ExternalizableWrapper.cs" />
+    <Compile Include="RTMP\IO\SerializationContext.cs" />
+    <Compile Include="RTMP\IO\SerializedNameAttribute.cs" />
+    <Compile Include="RTMP\IO\SerializerObjectFactory.cs" />
+    <Compile Include="RTMP\IO\StreamHelper.cs" />
+    <Compile Include="RTMP\IO\TransientAttribute.cs" />
+    <Compile Include="RTMP\IO\TypeConverters\StringConverter.cs" />
+    <Compile Include="RTMP\Messaging\Events\Abort.cs" />
+    <Compile Include="RTMP\Messaging\Events\Acknowledgement.cs" />
+    <Compile Include="RTMP\Messaging\Events\AudioVideoData.cs" />
+    <Compile Include="RTMP\Messaging\Events\ChunkSize.cs" />
+    <Compile Include="RTMP\Messaging\Events\Command.cs" />
+    <Compile Include="RTMP\Messaging\Events\PeerBandwith.cs" />
+    <Compile Include="RTMP\Messaging\Events\UserControlMessage.cs" />
+    <Compile Include="RTMP\Messaging\Events\WindowAcknowledgementSize.cs" />
+    <Compile Include="RTMP\Messaging\InvocationException.cs" />
+    <Compile Include="RTMP\Messaging\MessageReceivedEventArgs.cs" />
+    <Compile Include="RTMP\Messaging\Messages\AcknowledgeMessage.cs" />
+    <Compile Include="RTMP\Messaging\Messages\AsyncMessage.cs" />
+    <Compile Include="RTMP\Messaging\Messages\CommandMessage.cs" />
+    <Compile Include="RTMP\Messaging\Messages\ErrorMessage.cs" />
+    <Compile Include="RTMP\Messaging\Messages\FlexMessage.cs" />
+    <Compile Include="RTMP\Messaging\Messages\RemotingMessage.cs" />
+    <Compile Include="RTMP\Messaging\RtmpEvent.cs" />
+    <Compile Include="RTMP\Net\ChunkMessageHeaderType.cs" />
+    <Compile Include="RTMP\Net\ClientDisconnectedException.cs" />
+    <Compile Include="RTMP\Net\EventReceivedEventArgs.cs" />
+    <Compile Include="RTMP\Net\MessageType.cs" />
+    <Compile Include="RTMP\Net\RtmpClient.cs" />
+    <Compile Include="RTMP\Net\RtmpHeader.cs" />
+    <Compile Include="RTMP\Net\RtmpPacket.cs" />
+    <Compile Include="RTMP\Net\RtmpPacketReader.cs" />
+    <Compile Include="RTMP\Net\RtmpPacketWriter.cs" />
+    <Compile Include="RTMP\Net\StatusAsObject.cs" />
+    <Compile Include="RTMP\RtmpSharp.cs" />
+    <Compile Include="StreamHash.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RiotSharp\RiotSharp.csproj">
+      <Project>{3815e113-140c-4ee7-b0b9-7797c9352311}</Project>
+      <Name>RiotSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GBSGN.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)signtool.exe sign /t http://timestamp.verisign.com/scripts/timstamp.dll /f "E:\ARCHIVE\Arsslensoft\CA\ASCA-GAMING.pfx" "$(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

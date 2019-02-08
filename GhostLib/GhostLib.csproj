@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A6E883B-981D-44CE-9161-01470599B30C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GhostLib</RootNamespace>
+    <AssemblyName>GhostLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Research\LOLUTIL\Bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>C:\Users\Arsslen\Downloads\BaronReplays\BaronReplays\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Ghostblade\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ApplicationInstance.cs" />
+    <Compile Include="Application\AssociationManager.cs" />
+    <Compile Include="Application\FileAssociationInfo.cs" />
+    <Compile Include="Application\ProgramAssociationInfo.cs" />
+    <Compile Include="Application\ProgramIcon.cs" />
+    <Compile Include="Application\ProgramVerb.cs" />
+    <Compile Include="Application\RegistryException.cs" />
+    <Compile Include="Application\RegistryWrapper.cs" />
+    <Compile Include="Application\ShellNotification.cs" />
+    <Compile Include="DownloadTask.cs" />
+    <Compile Include="GBConfig.cs" />
+    <Compile Include="GhostOverlay.cs" />
+    <Compile Include="Gui\NSTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\ThemeBase154.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\TXT\FindDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\TXT\FindDialog.Designer.cs">
+      <DependentUpon>FindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\TXT\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TXT\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\TXT\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TXT\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\TXT\ISearchable.cs" />
+    <Compile Include="Gui\TXT\ReplaceEventArgs.cs" />
+    <Compile Include="Gui\TXT\ReplaceEventHandler.cs" />
+    <Compile Include="Gui\TXT\SearchableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\TXT\SearchableTextBox.Designer.cs">
+      <DependentUpon>SearchableTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\TXT\SearchEventArgs.cs" />
+    <Compile Include="Gui\TXT\SearchEventHandler.cs" />
+    <Compile Include="Gui\X3DBorderPrimitive.cs" />
+    <Compile Include="Gui\XAntiAlias.cs" />
+    <Compile Include="Gui\XCoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\XCoolFormHelper.cs" />
+    <Compile Include="Gui\XStatusBar.cs" />
+    <Compile Include="Gui\XTitleBar.cs" />
+    <Compile Include="Gui\XTitleBarButton.cs" />
+    <Compile Include="Gui\XTitleBarIconHolder.cs" />
+    <Compile Include="Lang\GhostLocale.cs" />
+    <Compile Include="GhostRessources.cs" />
+    <Compile Include="Lang\LanguageManager.cs" />
+    <Compile Include="LeagueProfile.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Network\GWebProxy.cs" />
+    <Compile Include="Network\ICMP.cs" />
+    <Compile Include="Network\IProxy.cs" />
+    <Compile Include="Network\NetworkInterfaceProxy.cs" />
+    <Compile Include="Network\NetworkManager.cs" />
+    <Compile Include="Network\NetworkTest.cs" />
+    <Compile Include="Network\ProxyType.cs" />
+    <Compile Include="Network\Proxy\Exceptions.cs" />
+    <Compile Include="Network\Proxy\HttpHeaders.cs" />
+    <Compile Include="Network\Proxy\HttpRequestLine.cs" />
+    <Compile Include="Network\Proxy\HttpSocket.cs" />
+    <Compile Include="Network\Proxy\HttpStatusLine.cs" />
+    <Compile Include="Network\Proxy\ProxyDummyEcho.cs" />
+    <Compile Include="Network\Proxy\ProxyLogic.cs" />
+    <Compile Include="Network\Proxy\SystemProxy.cs" />
+    <Compile Include="Network\Proxy\SystemProxySettings.cs" />
+    <Compile Include="Network\Proxy\TcpServer.cs" />
+    <Compile Include="Network\SmartWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Patcher.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recording\ReplayRecorder.cs" />
+    <Compile Include="RiotTool.cs" />
+    <Compile Include="SettingsManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GBReplay\GBReplay.csproj">
+      <Project>{00980cc5-2b5e-4278-9748-3e1c752033c7}</Project>
+      <Name>GBReplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GhostPatcher\GhostBase.csproj">
+      <Project>{3252c427-0dc1-47d6-97ce-2df58dc40300}</Project>
+      <Name>GhostBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MetroFramework\MetroFramework.csproj">
+      <Project>{bb41ac8b-cbed-4387-a7e0-4567edb3f57f}</Project>
+      <Name>MetroFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RiotSharp\RiotSharp.csproj">
+      <Project>{3815e113-140c-4ee7-b0b9-7797c9352311}</Project>
+      <Name>RiotSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gui\TXT\FindDialog.resx">
+      <DependentUpon>FindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TXT\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TXT\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TXT\SearchableTextBox.resx">
+      <DependentUpon>SearchableTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gui\TXT\SearchableTextBox.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)signtool.exe sign /t http://timestamp.verisign.com/scripts/timstamp.dll /f "E:\ARCHIVE\Arsslensoft\CA\ASCA-GAMING.pfx" "$(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

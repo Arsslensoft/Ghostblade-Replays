@@ -1,0 +1,40 @@
+D:\Ghostblade\Release\GhostReplay.exe.config
+D:\Ghostblade\Release\GhostReplay.exe
+D:\Ghostblade\Release\GhostReplay.pdb
+D:\Ghostblade\GhostReplay\obj\Release\GhostReplay.csprojResolveAssemblyReference.cache
+D:\Ghostblade\GhostReplay\obj\Release\GhostReplays.Properties.Resources.resources
+D:\Ghostblade\GhostReplay\obj\Release\GhostReplay.csproj.GenerateResource.Cache
+D:\Ghostblade\GhostReplay\obj\Release\GhostReplay.exe
+D:\Ghostblade\GhostReplay\obj\Release\GhostReplay.pdb
+E:\Ghostblade OLD\Release\GhostReplay.exe.config
+E:\Ghostblade OLD\Release\GhostReplay.exe
+E:\Ghostblade OLD\Release\GhostReplay.pdb
+E:\Ghostblade OLD\GhostReplay\obj\Release\GhostReplay.csprojResolveAssemblyReference.cache
+E:\Ghostblade OLD\GhostReplay\obj\Release\GhostReplays.Properties.Resources.resources
+E:\Ghostblade OLD\GhostReplay\obj\Release\GhostReplay.csproj.GenerateResource.Cache
+E:\Ghostblade OLD\GhostReplay\obj\Release\GhostReplay.exe
+E:\Ghostblade OLD\GhostReplay\obj\Release\GhostReplay.pdb
+E:\GhostbladeOLD\Release\GhostReplay.exe.config
+E:\GhostbladeOLD\Release\GhostReplay.exe
+E:\GhostbladeOLD\Release\GhostReplay.pdb
+E:\GhostbladeOLD\GhostReplay\obj\Release\GhostReplay.csprojResolveAssemblyReference.cache
+E:\GhostbladeOLD\GhostReplay\obj\Release\GhostReplays.Properties.Resources.resources
+E:\GhostbladeOLD\GhostReplay\obj\Release\GhostReplay.csproj.GenerateResource.Cache
+E:\GhostbladeOLD\GhostReplay\obj\Release\GhostReplay.exe
+E:\GhostbladeOLD\GhostReplay\obj\Release\GhostReplay.pdb
+E:\Ghostblade\Release\GhostReplay.exe.config
+E:\Ghostblade\Release\GhostReplay.exe
+E:\Ghostblade\Release\GhostReplay.pdb
+E:\Ghostblade\GhostReplay\obj\Release\GhostReplay.csprojResolveAssemblyReference.cache
+E:\Ghostblade\GhostReplay\obj\Release\GhostReplays.Properties.Resources.resources
+E:\Ghostblade\GhostReplay\obj\Release\GhostReplay.csproj.GenerateResource.Cache
+E:\Ghostblade\GhostReplay\obj\Release\GhostReplay.exe
+E:\Ghostblade\GhostReplay\obj\Release\GhostReplay.pdb
+E:\Projects\Ghostblade\Release\GhostReplay.exe.config
+E:\Projects\Ghostblade\Release\GhostReplay.exe
+E:\Projects\Ghostblade\Release\GhostReplay.pdb
+E:\Projects\Ghostblade\GhostReplay\obj\Release\GhostReplay.csprojResolveAssemblyReference.cache
+E:\Projects\Ghostblade\GhostReplay\obj\Release\GhostReplays.Properties.Resources.resources
+E:\Projects\Ghostblade\GhostReplay\obj\Release\GhostReplay.csproj.GenerateResource.Cache
+E:\Projects\Ghostblade\GhostReplay\obj\Release\GhostReplay.exe
+E:\Projects\Ghostblade\GhostReplay\obj\Release\GhostReplay.pdb

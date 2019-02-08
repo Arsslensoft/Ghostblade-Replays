@@ -1,0 +1,7 @@
+D:\LOLUTIL\Ghostblade\RiotSharp\bin\x86\Debug\RiotSharp.dll
+D:\LOLUTIL\Ghostblade\RiotSharp\bin\x86\Debug\RiotSharp.pdb
+D:\LOLUTIL\Ghostblade\RiotSharp\bin\x86\Debug\Newtonsoft.Json.dll
+D:\LOLUTIL\Ghostblade\RiotSharp\bin\x86\Debug\Newtonsoft.Json.xml
+D:\LOLUTIL\Ghostblade\RiotSharp\obj\x86\Debug\RiotSharp.dll
+D:\LOLUTIL\Ghostblade\RiotSharp\obj\x86\Debug\RiotSharp.pdb
+D:\LOLUTIL\Ghostblade\RiotSharp\obj\x86\Debug\RiotSharp.csprojResolveAssemblyReference.cache

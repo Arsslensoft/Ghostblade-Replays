@@ -1,0 +1,44 @@
+﻿Build started 06/10/2015 09:08:20.
+     1>Project "E:\Projects\Ghostblade\GhostOverlay\GhostOverlay.vcxproj" on node 2 (Rebuild target(s)).
+       Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WIN32 /D WIN32 /D DETOURS_32BIT /D _DEBUG /D _WINDOWS /D _USRDLL /D DETOURS_X86 /D WIN32PROJECT1_EXPORTS /D _CRT_SECURE_NO_DEPRECATE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\GhostOverlay.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WIN32 /D WIN32 /D DETOURS_32BIT /D _DEBUG /D _WINDOWS /D _USRDLL /D DETOURS_X86 /D WIN32PROJECT1_EXPORTS /D _CRT_SECURE_NO_DEPRECATE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\GhostOverlay.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt creatwth.cpp detours.cpp detours\detours.cpp disasm.cpp image.cpp modules.cpp Win32Project1.cpp
+         Win32Project1.cpp
+         modules.cpp
+         image.cpp
+         disasm.cpp
+         detours.cpp
+         detours.cpp
+         creatwth.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _WIN32 /D WIN32 /D DETOURS_32BIT /D _DEBUG /D _WINDOWS /D _USRDLL /D DETOURS_X86 /D WIN32PROJECT1_EXPORTS /D _CRT_SECURE_NO_DEPRECATE /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+     1>e:\projects\ghostblade\ghostoverlay\dllmain.cpp(112): warning C4101: 'i' : unreferenced local variable
+     1>e:\projects\ghostblade\ghostoverlay\dllmain.cpp(169): warning C4101: 'threadId' : unreferenced local variable
+     1>e:\projects\ghostblade\ghostoverlay\dllmain.cpp(165): warning C4101: 'cbWritten' : unreferenced local variable
+     1>e:\projects\ghostblade\ghostoverlay\dllmain.cpp(465): warning C4101: 'buffer' : unreferenced local variable
+     1>e:\projects\ghostblade\ghostoverlay\dllmain.cpp(208): warning C4715: 'StartPipe' : not all control paths return a value
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\GhostOverlay3.res" GhostOverlay3.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Release\GhostOverlay.dll" /INCREMENTAL /NOLOGO d3dx9.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\Release\GhostOverlay.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Release\GhostOverlay.lib" /MACHINE:X86 /DLL Debug\GhostOverlay3.res
+         Debug\creatwth.obj
+         Debug\detours.obj
+         Debug\detours.obj
+         Debug\disasm.obj
+         Debug\dllmain.obj
+         Debug\image.obj
+         Debug\modules.obj
+         Debug\stdafx.obj
+         Debug\Win32Project1.obj
+     1>Debug\detours.obj : warning LNK4042: object specified more than once; extras ignored
+            Creating library ..\Release\GhostOverlay.lib and object ..\Release\GhostOverlay.exp
+         GhostOverlay.vcxproj -> E:\Projects\Ghostblade\GhostOverlay\..\Release\GhostOverlay.dll
+     1>Done Building Project "E:\Projects\Ghostblade\GhostOverlay\GhostOverlay.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.82

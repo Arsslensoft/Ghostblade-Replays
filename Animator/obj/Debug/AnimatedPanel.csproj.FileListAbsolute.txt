@@ -1,0 +1,5 @@
+C:\Projects_CSharp\AnimatedPanel\AnimatedPanel\bin\Debug\AnimatedPanel.dll
+C:\Projects_CSharp\AnimatedPanel\AnimatedPanel\bin\Debug\AnimatedPanel.pdb
+C:\Projects_CSharp\AnimatedPanel\AnimatedPanel\obj\Debug\AnimatedPanel.dll
+C:\Projects_CSharp\AnimatedPanel\AnimatedPanel\obj\Debug\AnimatedPanel.pdb
+C:\Projects_CSharp\AnimatedPanel\AnimatedPanel\obj\Debug\AnimatedPanel.csprojResolveAssemblyReference.cache

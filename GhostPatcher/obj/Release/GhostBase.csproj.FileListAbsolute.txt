@@ -1,0 +1,16 @@
+E:\Ghostblade\Release\GhostBase.dll
+E:\Ghostblade\Release\GhostBase.pdb
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.csprojResolveAssemblyReference.cache
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.Properties.Resources.resources
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.UpdaterForm.resources
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.csproj.GenerateResource.Cache
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.dll
+E:\Ghostblade\GhostPatcher\obj\Release\GhostBase.pdb
+E:\Projects\Ghostblade\Release\GhostBase.dll
+E:\Projects\Ghostblade\Release\GhostBase.pdb
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.csprojResolveAssemblyReference.cache
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.Properties.Resources.resources
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.UpdaterForm.resources
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.csproj.GenerateResource.Cache
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.dll
+E:\Projects\Ghostblade\GhostPatcher\obj\Release\GhostBase.pdb

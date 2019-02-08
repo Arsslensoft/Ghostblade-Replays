@@ -1,0 +1,15 @@
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\TwitchStream.exe
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\TwitchStream.pdb
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\MetroFramework.dll
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\MetroFramework.pdb
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\Interop.ShockwaveFlashObjects.dll
+E:\Projects\Ghostblade\TwitchStream\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.csprojResolveAssemblyReference.cache
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\Interop.ShockwaveFlashObjects.dll
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.csproj.ResolveComReference.cache
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.Form1.resources
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.Properties.Resources.resources
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.csproj.GenerateResource.Cache
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.exe
+E:\Projects\Ghostblade\TwitchStream\obj\Debug\TwitchStream.pdb

@@ -1,0 +1,8 @@
+D:\LOLUTIL\Bin\GhostReplay.exe.config
+D:\LOLUTIL\Bin\GhostReplay.exe
+D:\LOLUTIL\Bin\GhostReplay.pdb
+D:\LOLUTIL\Ghostblade\GhostReplay\obj\x86\Debug\GhostReplay.csprojResolveAssemblyReference.cache
+D:\LOLUTIL\Ghostblade\GhostReplay\obj\x86\Debug\GhostReplay.Properties.Resources.resources
+D:\LOLUTIL\Ghostblade\GhostReplay\obj\x86\Debug\GhostReplay.csproj.GenerateResource.Cache
+D:\LOLUTIL\Ghostblade\GhostReplay\obj\x86\Debug\GhostReplay.exe
+D:\LOLUTIL\Ghostblade\GhostReplay\obj\x86\Debug\GhostReplay.pdb
